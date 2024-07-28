@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techinfo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        .video-container {
+            position: relative;
+            height: 160vh;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-top: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        ul li a img {
+            width: 100px; /* Adjust image size as needed */
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+            border-radius: 14px;
+        }
+
+        ul li a:hover img {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="earth.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+           <h1>Welcome to Techinfo</h1>
+           <p>Samsung offers a vast array of consumer electronics, each with unique features. Here's a breakdown of some of their most popular product categories:</p>
+           <ul>
+               <li>
+                   <a href="https://www.samsung.com/in/smartphones/galaxy-s24-ultra/buy/?cid=in_pd_ppc_google_im-all-all-all-dtc_sales_samsung-allproducts-all-2023_eshop-text-rlsa_01jan2023-na_1ur-501334l-2024-eshop-bau-rlsa-cpc_pfm-688147130155-1032431191-54537502041-aud-926077346581:kwd-10020211-samsung-b--g--&gad_source=1&gclid=CjwKCAjwi_exBhA8EiwA_kU1Mh3T8yJYluUegv9-FWa31I7q8PCDy_bEmKr5pa_rNAfm_Ux1cxPGsRoC8ywQAvD_BwE" target="_blank">
+                       <img src="s24.webp" alt="Samsung Galaxy S21">
+                       <span>Samsung Galaxy S21: Flagship smartphone with high-resolution display, powerful processor, advanced camera system, and more. Buy Now</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.samsung.com/global/galaxy/galaxy-s21-5g/" target="_blank">
+                        <img src="s21.png" alt="Samsung Galaxy S21">
+                        <span>Samsung Galaxy S21: Flagship smartphone with high-resolution display, powerful processor, advanced camera system, and more. Buy Now</span>
+                    </a>
+                </li>
+               <li>
+                   <a href="https://www.samsung.com/global/galaxy/z-fold2/" target="_blank">
+                       <img src="zfold.jpeg" alt="Samsung Galaxy Z Fold 2">
+                       <span>Samsung Galaxy Z Fold 2: Foldable smartphone with innovative design, large display, multitasking capabilities, and more. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.samsung.com/global/galaxy/watch/" target="_blank">
+                       <img src="watch.webp" alt="Samsung Galaxy Watch">
+                       <span>Samsung Galaxy Watch: Smartwatch with fitness tracking, notification display, contactless payments, and seamless integration. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.samsung.com/global/monitors/curved-c27r500fhu-lc27r500fhuuxen/" target="_blank">
+                       <img src="cur.jpeg" alt="Samsung Curved Monitor">
+                       <span>Samsung Curved Monitor: Gaming monitor with immersive curved design, high refresh rates, and vibrant display. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.samsung.com/global/virtual-reality/gear-vr/" target="_blank">
+                       <img src="vr.jpeg" alt="Samsung Gear VR">
+                       <span>Samsung Gear VR: Virtual reality headset for immersive gaming and entertainment experiences. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.samsung.com/global/tvs/qled-q80r/" target="_blank">
+                       <img src="qled.jpeg" alt="Samsung QLED TV">
+                       <span>Samsung QLED TV: High-quality television with vibrant colors, smart features, and immersive viewing experience. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                <a href="https://www.samsung.com/in/offer/online/samsung-fest/fab-grab/?cid=in_pd_affiliate_other_all_none_samsungeshopfest2022_notification_20220701_none-1ur-501409l-2022" target="_blank">
+                    <img src="samsung.avif" alt="iPhone SE">
+                    <span>Many More: Buy Now</span>
+                </a>
+            </li>
+           </ul>
+           <p>Remember, these are just a few examples of Samsung's products. Visit Samsung's website for more information and options.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techinfo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        .video-container {
+            position: relative;
+            height: 233vh;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image with hover effect */
+        .image-container {
+            position: relative;
+            margin-top: 30px; /* Adjust as needed */
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ffdb4d;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="earth.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to Techinfo</h1>
+            <p>Apple Vision Pro is a mixed reality headset that lets you blend digital content with the real world. Here's a rundown of its features:</p>
+
+            <h2>Mixed Reality Experience:</h2>
+            <ul>
+                <li>Combines virtual reality (VR) and augmented reality (AR) to create a seamless experience where digital objects appear in your physical space.</li>
+                <li>Imagine watching a movie on a giant screen that fills your room, or attending a virtual concert with realistic sights and sounds.</li>
+            </ul>
+
+            <h2>3D Capture:</h2>
+            <ul>
+                <li>Capture photos and videos in 3D with spatial depth.</li>
+                <li>Relive these moments with a special sense of immersion using the headset's spatial audio features.</li>
+                <li>Even existing photos and videos from your iPhone can be viewed in a new dimension on the Apple Vision Pro.</li>
+            </ul>
+
+            <h2>Cinematic Experience:</h2>
+            <ul>
+                <li>Watch movies and shows on a virtual giant screen that adjusts to the size of your room.</li>
+                <li>Spatial audio creates a surround sound effect that makes you feel like you're part of the action.</li>
+            </ul>
+
+            <h2>Gaming:</h2>
+            <ul>
+                <li>Play games in a fully immersive environment.</li>
+                <li>Connect your controller and enjoy a whole new level of gaming experience.</li>
+            </ul>
+
+            <h2>Other Features:</h2>
+            <ul>
+                <li><strong>Lightweight and comfortable design:</strong> Made of a single piece of curved glass and a lightweight aluminum frame.</li>
+                <li><strong>Modular system:</strong> For potential future upgrades and customization.</li>
+                <li><strong>Advanced technology:</strong> Custom Apple silicon chips, high-resolution displays, and multiple cameras and sensors to create a realistic and responsive experience.</li>
+            </ul>
+
+            <h2>Availability and Pricing:</h2>
+            <ul>
+                <li>Released in February 2024 in the United States, with a worldwide launch yet to be announced.</li>
+                <li>Starts at US$3,499.</li>
+            </ul>
+
+            <p>Here are some resources where you can learn more about Apple Vision Pro:</p>
+            <ul>
+                <li><a href="https://www.apple.com/apple-vision-pro/">Apple's website</a></li>
+                <li><a href="https://www.youtube.com/watch?v=TX9qSaGXFyg">YouTube video introducing Apple Vision Pro</a></li>
+            </ul>
+
+            <!-- Image with hover effect -->
+            <div class="image-container">
+                <img src="apple-vision-pro-features.jpg" alt="Description of the image">
+                <div class="overlay"></div>
+                <a class="button" href="https://www.apple.com/apple-vision-pro/">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

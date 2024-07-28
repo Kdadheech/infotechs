@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techinfo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .video-container {
+            position: relative;
+            height: 208vh;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .btn-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .btn-container a:hover {
+            background-color: #ffdb4d;
+        }
+
+        .btn-container a::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('button-bg.jpg'); /* Adjust the path to your background image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .btn-container a:hover::after {
+            opacity: 1;
+        }
+
+        #bmw2 { /* Target the image by its ID */
+            height: 200px; /* Adjust the height as needed */
+        }
+   
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <video autoplay muted loop id="myVideo">
+        <source src="earth.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <h1>BMW</h1>
+        <p>BMW Flow elink, more accurately called BMW iX Flow featuring E Ink, is a concept car unveiled by BMW at CES 2022. It showcases a technology that allows the car's exterior to change color.</p>
+
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Color Changing Exterior:</li>
+            <p>The most striking feature is the ability to change the car's color. This is achieved using a special body wrap containing millions of tiny capsules filled with black and white pigment. By applying an electric charge, BMW can control which color shows on the surface, allowing the car to switch between black and white or even display various shades of gray.</p>
+            <li>E Ink Technology:</li>
+            <p>The color-changing capability is powered by E Ink, the same technology used in eReaders. E Ink displays consume very little energy when not changing state, making them ideal for this application.</p>
+            <li>Personalization:</li>
+            <p>Imagine matching your car's color to your mood or outfit! This technology opens doors to a whole new level of car personalization.</p>
+            <li>Information Display:</li>
+            <p>The color-changing exterior can also be used to display information. For instance, it could show the battery level or even act as a giant digital billboard.</p>
+            <li>Functional Benefits:</li>
+            <p>Beyond aesthetics, color can affect a car's temperature. By changing the car's exterior color, BMW envisions regulating cabin temperature and potentially improving energy efficiency.</p>
+        </ul>
+
+        <!-- Image section as a button with link -->
+        <div class="btn-container">
+            <a href="https://www.bmw.in/en/index.html">
+                <img src="bline.jpg" id="bmw2" alt="BMW Image">
+                Learn More
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

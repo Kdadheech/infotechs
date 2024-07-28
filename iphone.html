@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techinfo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        .video-container {
+            position: relative;
+            height: 160vh;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-top: 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        ul li a img {
+            width: 100px; /* Adjust image size as needed */
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+            border-radius: 14px;
+        }
+
+        ul li a:hover img {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="earth.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+           <h1>Welcome to Techinfo</h1>
+           <p>The iPhone is a line of smartphones designed, developed, and marketed by Apple Inc. iPhones use Apple's iOS mobile operating system. The first iPhone was released on June 29, 2007, and has been released annually since then. iPhones are known for their innovative features, high build quality, and user-friendly interface.</p>
+           <p>Here's a summary of the iPhone:</p>
+           <ul>
+               <li>
+                   <a href="https://www.flipkart.com/search?q=iphone+15+pro+max&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_10_na_na_na&as-pos=2&as-type=RECENT&suggestionId=iphone+15+pro+max%7CMobiles&requestId=350eee17-8bb7-498a-8a94-bfa23d83da9c&as-searchtext=iphone%2015%20" target="_blank">
+                       <img src="pro.jpeg" alt="iPhone 15 Pro">
+                       <span>iPhone 15 Pro: The most advanced iPhone, with a powerful A17 Pro chip, a pro camera system with a 48MP main camera, and a beautiful titanium design. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.flipkart.com/search?q=iphone%2015&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">
+                       <img src="15.webp" alt="iPhone 15">
+                       <span>iPhone 15: A powerful and affordable option, with an A15 Bionic chip, a dual-camera system, and a variety of colors to choose from. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.flipkart.com/search?q=iphone+14&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_na&as-pos=2&as-type=RECENT&suggestionId=iphone+14%7CMobiles&requestId=a1f4526d-b076-4eb9-abd3-e31bda42be07&as-backfill=on" target="_blank">
+                       <img src="14.jpeg" alt="iPhone 14">
+                       <span>iPhone 14: A great all-around phone, with a powerful A15 Bionic chip, a dual-camera system, and a long battery life. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://example.com/buy/iphone13" target="_blank">
+                       <img src="13.webp" alt="iPhone 13">
+                       <span>iPhone 13: A more affordable option, with an A15 Bionic chip, a dual-camera system, and a variety of colors to choose from. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.flipkart.com/apple-iphone-se-3rd-gen-starlight-64-gb/p/itm0159a51e4c621" target="_blank">
+                       <img src="se.jpeg" alt="iPhone SE">
+                       <span>iPhone SE: The most affordable iPhone, with a powerful A15 Bionic chip, a single-camera system, and a classic design. Buy Now</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="https://www.flipkart.com/search?q=iphones&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">
+                       <img src="iphone-15-pro-wallpaper-2.webp" alt="iPhone SE">
+                       <span>Many More: Buy Now</span>
+                   </a>
+               </li>
+           </ul>
+           <p>Whether you're looking for the most powerful and feature-rich iPhone or a more affordable option, there's an iPhone that's right for you.</p>
+        </div>
+    </div>
+</body>
+</html>

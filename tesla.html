@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Techinfo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .video-container {
+            position: relative;
+            height:     208vh;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .model-image {
+            margin-top: 30px;
+        }
+
+        .model-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .model-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .model-name {
+            margin-top: 20px;
+        }
+
+        .model-name a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .model-name a:hover {
+            background-color: #ffdb4d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+            <source src="earth.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Tesla</h1>
+            <p>Tesla is a company focused on sustainable energy solutions, with electric vehicles (EVs) being their most prominent product. They also design and manufacture energy generation and storage systems like solar panels and Powerwall batteries.</p>
+            <h2>Mission</h2>
+            <p>Tesla aims to accelerate the world's transition to sustainable energy through electric vehicles and clean energy products.</p>
+            <h2>Vehicle Models (Current & Upcoming)</h2>
+            <ul>
+                <li><strong>Tesla Roadster (初代 Roadster - Shodai Roadster):</strong> (2008-2012) The first Tesla car, a high-performance electric sports car (a second-generation Roadster is planned).</li>
+                <li><strong>Model S:</strong> (2012-Present) A luxury electric sedan known for its long range, performance, and spacious interior.</li>
+                <li><strong>Model X:</strong> (2015-Present) A luxury electric SUV with unique falcon-wing doors and a focus on family-friendly features.</li>
+                <li><strong>Model 3:</strong> (2017-Present) A more affordable electric sedan, the best-selling electric car globally.</li>
+                <li><strong>Model Y:</strong> (2020-Present) A compact electric SUV based on the Model 3 platform, the best-selling car globally (as of 2023).</li>
+                <li><strong>Tesla Semi:</strong> (2022-Present) A Class 8 electric semi-truck designed for long-haul freight transportation.</li>
+                <li><strong>Cybertruck:</strong> (2023-Present) An electric pickup truck with a futuristic, angular design and emphasis on durability.</li>
+            </ul>
+            <h2>Tesla Vehicle Features (Some Examples)</h2>
+            <ul>
+                <li><strong>Electric powertrain:</strong> Delivers zero tailpipe emissions and exceptional performance.</li>
+                <li><strong>Long range:</strong> Many Tesla models boast ranges exceeding 300 miles on a single charge.</li>
+                <li><strong>Autopilot:</strong> A suite of advanced driver-assistance features for highway driving (<em>Note:</em> Always requires driver supervision).</li>
+                <li><strong>Over-the-air software updates:</strong> Tesla vehicles can receive new features and improvements through internet updates.</li>
+                <li><strong>Panoramic sunroof:</strong> Provides a spacious and airy feel in the cabin.</li>
+                <li><strong>Minimalist interior:</strong> Focuses on a large touchscreen for most controls.</li>
+                <li><strong>Gaming capabilities:</strong> Some models allow playing video games on the touchscreen.</li>
+            </ul>
+            <h2>Additional Information</h2>
+            <p>Tesla also sells solar panels and Powerwall home battery systems for sustainable energy generation and storage. The company is known for its innovative spirit and CEO Elon Musk.</p>
+            <p>This is a general overview of Tesla and their electric vehicles. Specific features may vary depending on the model and configuration. You can visit Tesla's website (<a href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">https://www.tesla.com/</a>) for the latest information and detailed specifications.</p>
+
+            <!-- Image section with model name as a button and link -->
+            <div class="model-image">
+                <a href="https://www.tesla.com/">
+                    <img src="lineup.jpg" alt="Tesla Model Image">
+                </
